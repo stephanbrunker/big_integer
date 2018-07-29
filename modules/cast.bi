@@ -215,11 +215,12 @@ Operator Bigint.cast() As String
 		Loop
 	Next j
 	' need to split the value of the byte into 2 digits and to convert into ASCII
-	Dim As String d2 = Chr(d[0] \ 10 + Asc( "0")) + Chr(d[0] Mod 10 + Asc( "0"))
+	Dim As String d2 = Chr(d[0] \ 10 + Asc("0")) + Chr(d[0] Mod 10 + Asc("0"))
 	' remove a possible 0 in front of the number
 	d2 = LTrim(d2, "0")
+	If Len(d2) = 0 Then Return "+0"
 	For i = 1 To Len(d) - 1
-		d2 += Chr(d[i] \ 10 + Asc( "0")) + Chr(d[i] Mod 10 + Asc( "0"))
+		d2 &= Chr(d[i] \ 10 + Asc("0")) & Chr(d[i] Mod 10 + Asc("0"))
 	Next i
 	If sign Then d2 = "-" & d2 Else d2 = "+" & d2
 	Return d2

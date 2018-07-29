@@ -66,7 +66,7 @@ Stephan Brunker\
 Hartmut Ruske\
 From the freebasic.net forum:\
 Richard\
-frisian\
+frisian
 
 ## Example
 #### example_bigint_isprime.bas

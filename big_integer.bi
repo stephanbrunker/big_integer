@@ -1,4 +1,4 @@
-' version 2.8 22 July 2018
+' version 2.8.1 29 July 2018
 '================================================================
 ' by Stephan Brunker (stephanbrunker at web punkt de)
 ' based on version 1.2 by Richard @ freebasic.net/forum
@@ -6,7 +6,7 @@
 '================================================================
 ' The easy way to use - analog to the "hello world" the 1+1:
 '------------------------------
-' #include "big_integer.bas"
+' #include "big_integer.bi"
 ' Dim as Bigint a,b,c,d
 ' a = 1234
 ' b = "1357239875892745982784975230987590287"
